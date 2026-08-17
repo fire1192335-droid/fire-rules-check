@@ -1,0 +1,20 @@
+{
+  "name": "場所消防設備與無開口樓層法定判定系統",
+  "short_name": "消防法規判定",
+  "description": "消防場所應設設備自動檢核與無開口樓層合規判定工具",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6f8",
+  "theme_color": "#c0392b",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "./assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

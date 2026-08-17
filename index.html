@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>場所消防設備與無開口樓層法定判定系統</title>
+  <meta name="description" content="消防場所應設設備自動檢核與無開口樓層合規判定工具" />
+  <meta name="theme-color" content="#c0392b" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon.svg" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- MathJax 設定（本地化，離線可用） -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
+      svg: { fontCache: 'global' },
+      startup: { typeset: false },
+    };
+  </script>
+  <script defer src="./assets/vendor/tex-svg.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>場所消防設備與無開口樓層法定判定系統</h1>
+    <p>應設消防設備自動檢核 · 無開口樓層合規判定</p>
+  </header>
+
+  <nav id="module-nav" class="module-nav"></nav>
+
+  <main id="view"></main>
+
+  <section class="disclaimer">
+    <div class="disclaimer-box">
+      <strong>免責聲明：</strong>本工具之應設設備檢核為簡化行政檢討輔助，結果僅供規劃與初步判定參考，實際仍應由合格消防設備師（士）依現行法規與個案條件逐條核對確認。所有判定基準以主管機關公告之現行法規為準。
+    </div>
+  </section>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
