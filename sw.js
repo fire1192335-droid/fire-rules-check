@@ -1,6 +1,6 @@
 // Service Worker：離線快取。
 // 改動檔案清單或內容後，請調升 CACHE 版本號，使用者才會取得新版。
-const CACHE = 'fire-rules-v1';
+const CACHE = 'fire-rules-v2';
 
 const ASSETS = [
   './',
