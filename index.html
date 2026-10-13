@@ -3,39 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>場所消防設備與無開口樓層法定判定系統</title>
-  <meta name="description" content="消防場所應設設備自動檢核與無開口樓層合規判定工具" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <title>本工具已暫停使用</title>
   <meta name="theme-color" content="#c0392b" />
-  <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./assets/icons/icon.svg" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- MathJax 設定（本地化，離線可用） -->
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
-      svg: { fontCache: 'global' },
-      startup: { typeset: false },
-    };
-  </script>
-  <script defer src="./assets/vendor/tex-svg.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif; background: #f4f6f8; color: #211f1e; }
+    main { max-width: 560px; margin: 0 auto; padding: 48px 16px; line-height: 1.7; }
+    h1 { color: #9c2b1f; font-size: 1.5rem; }
+    .box { background: #fff; border-left: 6px solid #c0392b; padding: 16px 20px; border-radius: 8px; }
+  </style>
 </head>
 <body>
-  <header class="app-header">
-    <h1>場所消防設備與無開口樓層法定判定系統</h1>
-    <p>應設消防設備自動檢核 · 無開口樓層合規判定</p>
-  </header>
-
-  <nav id="module-nav" class="module-nav"></nav>
-
-  <main id="view"></main>
-
-  <section class="disclaimer">
-    <div class="disclaimer-box">
-      <strong>免責聲明：</strong>本工具之應設設備檢核為簡化行政檢討輔助，結果僅供規劃與初步判定參考，實際仍應由合格消防設備師（士）依現行法規與個案條件逐條核對確認。所有判定基準以主管機關公告之現行法規為準。
+  <main>
+    <h1>場所消防設備與無開口樓層法定判定系統：已暫停使用</h1>
+    <div class="box">
+      <p>經逐條核對《各類場所消防安全設備設置標準》（民國 113 年 4 月 24 日修正），本工具舊版存在條號引用錯誤與判定條件缺漏，結果不可作為檢討依據，故暫停提供。</p>
+      <p>請改以現行法規逐條檢討：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0120029">全國法規資料庫</a>。</p>
     </div>
-  </section>
-
-  <script type="module" src="./js/app.js"></script>
+  </main>
+  <script>
+    // 解除舊版離線快取（已加到主畫面的裝置）。
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));
+    }
+    if (window.caches) caches.keys().then((ks) => ks.forEach((k) => caches.delete(k)));
+  </script>
 </body>
 </html>
